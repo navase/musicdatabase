@@ -4,7 +4,7 @@
 
 <h2>Songs</h2>
 <% @artist.songs.each do |song| %>
-  <p><%= song.title %></p>
+  <p><%= link_to song.title, song %></p>
 <% end %>
 
 <p><%= link_to "Back", root_path %></p>
