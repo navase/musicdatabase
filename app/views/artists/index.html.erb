@@ -2,9 +2,4 @@
 
 <% @artists.each do |artist| %>
   <h2><%= link_to artist.name, artist %></h2>
-  <p><%= artist.biography %></p>
-  <p>Genre: <%= artist.genre %></p>
 <% end %>
-
-<br />
-<p><small><%= link_to "Go to songs index", songs_path %></small></p>
