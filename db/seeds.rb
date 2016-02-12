@@ -12,13 +12,15 @@ Artist.destroy_all
 naragonia = Artist.create({
   name: "Naragonia",
   biography: "Naragonia brengt eigenzinnige folk met een verfijnde, stevige energie. Het duo ontstond spontaan in de zomer van 2003 op het festival Andancas in Portugal.",
-  genre: "Folk"
+  genre: "Folk",
+  image: "naragonia.jpg"
 })
 
 kings_of_convenience = Artist.create({
   name: "Kings of Convenience",
   biography: "Kings of Convenience is an indie folk-pop duo from Bergen, Norway. The musical group is known for their delicate tunes, calming voices, and intricate and subtle guitar melodies.",
-  genre: "Pop"
+  genre: "Pop",
+  image: "kings_of_convenience.jpg"
 })
 
 alio = Song.create({ title: "Alio", artist_id: naragonia.id })
