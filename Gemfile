@@ -47,3 +47,4 @@ end
 
 gem 'bootstrap-sass'
 gem 'carrierwave'
+gem 'mini_magick'
