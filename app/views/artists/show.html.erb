@@ -1,5 +1,9 @@
-<h1><%= @artist.name %></h1>
-<p><%= image_tag @artist.image.medium %></p>
+<h1><%= @artist.name %>
+<%= link_to "Edit artist", edit_artist_path, class: "btn btn-default" %>
+<%= link_to "Delete artist", artist_path, class: "btn btn-default", method: :delete %></h1>
+
+
+<p><%= image_tag @artist.image %></p>
 <p><%= @artist.biography %></p>
 <p>Genre: <%= @artist.genre %></p>
 
@@ -7,5 +11,3 @@
 <% @artist.songs.each do |song| %>
   <p><%= link_to song.title, song %></p>
 <% end %>
-
-<p><%= link_to "Edit artist", edit_artist_path, class: "btn btn-default" %></p>
