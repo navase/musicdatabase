@@ -3,7 +3,7 @@
 <%= link_to "Delete artist", artist_path, class: "btn btn-default", method: :delete %></h1>
 
 
-<p><%= image_tag @artist.image %></p>
+<p><%= image_tag @artist.image.large %></p>
 <p><%= @artist.biography %></p>
 <p>Genre: <%= @artist.genre %></p>
 
