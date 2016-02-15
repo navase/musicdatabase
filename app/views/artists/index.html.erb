@@ -2,6 +2,6 @@
 <%= link_to "Add artist", new_artist_path, class: "btn btn-default" %></h1>
 
 <% @artists.each do |artist| %>
-  <p><%= image_tag artist.image.thumb %>
-  <%= link_to artist.name, artist %></p>
+  <h2><%= image_tag artist.image.thumb %>
+  <%= link_to artist.name, artist %></h2>
 <% end %>
