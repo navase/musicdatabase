@@ -4,8 +4,10 @@ one:
   name: MyString
   biography: MyText
   genre: MyString
+  image: MyString
 
 two:
   name: MyString
   biography: MyText
   genre: MyString
+  image: MyString

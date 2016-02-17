@@ -13,7 +13,7 @@ class ArtistsController < ApplicationController
 
   def create
     if @artist = Artist.create(artist_params)
-      redirect_to root_path
+      redirect_to @artist
     else
       render :new
     end

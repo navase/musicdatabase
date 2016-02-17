@@ -3,4 +3,4 @@
   <%= link_to "Delete song", song_path, class: "btn btn-default", method: :delete %></h1>
 
 
-  <p><%= link_to @song.artist.name, @song.artist %></p>
+  <p><%= link_to @song.artist.name, @song.artist if @song.artist %></p>
